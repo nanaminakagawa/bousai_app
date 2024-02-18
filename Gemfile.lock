@@ -104,6 +104,8 @@ GEM
     error_highlight (0.6.0)
     erubi (1.12.0)
     ffi (1.16.3)
+    font-awesome-sass (6.5.1)
+      sassc (~> 2.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -155,6 +157,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.7.3)
     rack (3.0.8)
+    rack-proxy (0.7.7)
+      rack
     rack-session (2.0.0)
       rack (>= 3.0.0)
     rack-test (2.1.0)
@@ -206,6 +210,7 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    semantic_range (3.0.0)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -229,6 +234,11 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
+    webpacker (5.4.4)
+      activesupport (>= 5.2)
+      rack-proxy (>= 0.6.1)
+      railties (>= 5.2)
+      semantic_range (>= 2.3.0)
     webrick (1.8.1)
     websocket (1.2.10)
     websocket-driver (0.7.6)
@@ -247,6 +257,7 @@ DEPENDENCIES
   capybara
   debug
   error_highlight (>= 0.4.0)
+  font-awesome-sass
   importmap-rails
   jbuilder
   pg (~> 1.1)
@@ -259,6 +270,7 @@ DEPENDENCIES
   turbo-rails
   tzinfo-data
   web-console
+  webpacker
 
 RUBY VERSION
    ruby 3.1.2p20

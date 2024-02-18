@@ -1,0 +1,17 @@
+body {
+  background-color: #ffffff;            /* 背景色 */
+
+  background-size: cover;               /* 全画面 */
+  background-attachment: fixed;         /* 固定 */
+  background-position: center center;   /* 縦横中央 */
+}
+
+
+.logo_area {
+  width: 250px;
+}
+
+.logo {
+  height: 100%;
+  width: 100%;
+}
