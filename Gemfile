@@ -28,6 +28,8 @@ gem "jbuilder"
 
 gem 'sassc', '~> 2.4'
 
+gem 'webpacker'
+
 gem "font-awesome-sass"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
