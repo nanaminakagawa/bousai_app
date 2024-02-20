@@ -28,12 +28,12 @@ gem "jbuilder"
 
 gem 'sassc', '~> 2.4'
 
-gem 'webpacker'
+gem 'webpacker', '~> 5.0'
 
 gem "font-awesome-sass"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
-gem 'webpacker'
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
