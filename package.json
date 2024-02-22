@@ -7,6 +7,8 @@
     "webpack-cli": "^5.1.4"
   },
   "devDependencies": {
+    "css-minimizer-webpack-plugin": "^6.0.0",
+    "mini-css-extract-plugin": "^2.8.0",
     "webpack-dev-server": "^3"
   }
 }
