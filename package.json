@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@rails/webpacker": "5.4.4",
+    "bootstrap": "^5.3.2",
+    "node-sass": "^9.0.0",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "css-minimizer-webpack-plugin": "^6.0.0",
+    "mini-css-extract-plugin": "^2.8.0",
+    "webpack-dev-server": "^3"
+  }
+}
