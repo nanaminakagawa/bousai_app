@@ -28,6 +28,8 @@ gem "jbuilder"
 
 gem 'sassc', '~> 2.4'
 
+gem 'high_voltage'
+
 gem 'webpacker', '~> 5.0'
 
 gem "font-awesome-sass"
