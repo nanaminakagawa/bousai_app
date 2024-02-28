@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   root 'top#index'
   get 'privacy_policy', to: 'pages#privacy_policy'
   get 'user_agreement', to: 'pages#user_agreement'
+  get 'contact', to: 'pages#contact'
   # Defines the root path route ("/")
   # root "posts#index"
 end
