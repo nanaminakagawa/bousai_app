@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-light">
 <div class="container-fluid">
-<%= link_to '防災クイズ', root_path, class: 'navbar-brand text-dark' %>
+<%= link_to '防災クイズ', menu_path, class: 'navbar-brand text-dark' %>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -9,13 +9,10 @@
       <li class="nav-item">
         <a class="nav-link active text-dark" aria-current="page" href="#">メニュー</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="#">新規登録</a>
-      </li>
     </ul>
     <div class="ms-auto">
-        <a class="nav-link text-dark" href="#">ログイン</a>
-      </div>
+    <%= link_to 'ログアウトする', logout_path, method: :delete,class: 'nav-link text-dark'  %>
+    </div>
   </div>
 </div>
 </nav>

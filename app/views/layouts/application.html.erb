@@ -10,11 +10,16 @@
     <%= stylesheet_link_tag "styles", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_importmap_tags %>
+    <script src="https://cdn.jsdelivr.net/npm/@rails/ujs@7.1.1/app/assets/javascripts/rails-ujs.min.js"></script>
   </head>
 
   <body>
-  <%= render 'shared/header' %>
+  <% if logged_in? %>
+      <%= render 'shareds/login_header' %>
+    <% else %>
+      <%= render 'shareds/before_login_header' %>
+    <% end %>
     <%= yield %>
+    <%= render 'shareds/footer' %>
   </body>
-  <%= render 'shared/fooder' %>
 </html>

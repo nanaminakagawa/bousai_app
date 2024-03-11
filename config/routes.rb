@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   get 'privacy_policy', to: 'pages#privacy_policy'
   get 'user_agreement', to: 'pages#user_agreement'
   get 'contact', to: 'pages#contact'
-  # Defines the root path route ("/")
-  # root "posts#index"
+  get '/login', to: 'user_sessions#new', as: :login
+  post '/login', to: 'user_sessions#create'
+  delete 'logout', to: 'user_sessions#destroy'
+  get '/menu', to: 'menu#index', as: 'menu'
+  resources :users, only: %i[new create]
 end

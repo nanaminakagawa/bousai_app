@@ -33,6 +33,8 @@ gem 'high_voltage'
 gem 'webpacker', '~> 5.0'
 
 gem "font-awesome-sass"
+
+gem 'sorcery'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
