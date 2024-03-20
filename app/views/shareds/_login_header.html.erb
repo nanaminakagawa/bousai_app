@@ -11,7 +11,7 @@
       </li>
     </ul>
     <div class="ms-auto">
-    <%= link_to 'ログアウトする', logout_path, method: :delete,class: 'nav-link text-dark'  %>
+    <%= link_to 'ログアウトする', logout_path, method: :delete, data: { confirm: 'ログアウトしますか？' } ,class: 'nav-link text-dark'  %>
     </div>
   </div>
 </div>
