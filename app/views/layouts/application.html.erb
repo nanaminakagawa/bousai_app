@@ -16,8 +16,10 @@
   <body>
   <% if logged_in? %>
       <%= render 'shareds/login_header' %>
+      <%= render 'shareds/flash_message' %>
     <% else %>
       <%= render 'shareds/before_login_header' %>
+      <%= render 'shareds/flash_message' %>
     <% end %>
     <%= yield %>
     <%= render 'shareds/footer' %>

@@ -9,6 +9,7 @@ class UserSessionsController < ApplicationController
   def create
     @user = login(params[:email], params[:password])#emailとpasswordが一致していれば@userにデータが代入される(loginメソッドで検証を行なっている)
     if @user #訳：loginメソッドで検証が一致して、@userにデータだ代入されたら
+      flash[:success] = 'ログインが成功しました'
       redirect_to menu_path
     else
       render :new #ログイン出来なかったら、ログインページ（'user_sessions#new'）にリダイレクトされる
@@ -17,6 +18,7 @@ class UserSessionsController < ApplicationController
 
   def destroy
     logout
-    redirect_to root_path, notice: 'ログアウトしました'
+    flash[:alert] = 'ログアウトしました。'
+    redirect_to root_path
   end
 end

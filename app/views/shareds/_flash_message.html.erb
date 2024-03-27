@@ -1,0 +1,15 @@
+<% flash.each do |type, message| %>
+  <% bootstrap_class = case type
+    when 'success' then 'list-group-item-success'
+    when 'error' then 'list-group-item-danger'
+    when 'alert' then 'list-group-item-warning'
+    when 'notice' then 'list-group-item-info'
+    else 'list-group-item-primary'
+    end %>
+
+  <div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action <%= bootstrap_class %>">
+      <%= message %>
+    </a>
+  </div>
+<% end %>
